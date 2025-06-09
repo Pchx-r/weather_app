@@ -7,9 +7,9 @@ const num DESIGN_STATUS_BAR = 0;
 extension ResponsiveExtension on num {
   double get _width => SizeUtils.width;
 
-  double get h => ((this * _width) / FIGMA_DESIGN_WIDTH);
+  double get h => ((this * _width) / DESIGN_WIDTH);
 
-  double get fSize => ((this * _width) / FIGMA_DESIGN_WIDTH);
+  double get fSize => ((this * _width) / DESIGN_WIDTH);
 }
 
 extension FormatExtension on double {
@@ -52,7 +52,7 @@ class SizeUtils {
 
   static late double height;
 
-  static  double width = FIGMA_DESIGN_WIDTH.toDouble();
+  static  double width = DESIGN_WIDTH.toDouble();
 
   static void setScreenSize(
     BoxConstraints constraints,
@@ -62,11 +62,11 @@ class SizeUtils {
     orientation = currentOrientation;
     if (orientation == Orientation.portrait) {
       width =
-          boxConstraints.maxWidth.isNonZero(defaultValue: FIGMA_DESIGN_WIDTH);
+          boxConstraints.maxWidth.isNonZero(defaultValue: DESIGN_WIDTH);
       height = boxConstraints.maxHeight.isNonZero();
     } else {
       width =
-          boxConstraints.maxHeight.isNonZero(defaultValue: FIGMA_DESIGN_WIDTH);
+          boxConstraints.maxHeight.isNonZero(defaultValue: DESIGN_WIDTH);
       height = boxConstraints.maxWidth.isNonZero();
     }
   }
