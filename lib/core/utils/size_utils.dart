@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart'; 
 
-const num FIGMA_DESIGN_WIDTH = 375;
-const num FIGMA_DESIGN_HEIGHT = 667;
-const num FIGMA_DESIGN_STATUS_BAR = 0;
+const num DESIGN_WIDTH = 375;
+const num DESIGN_HEIGHT = 667;
+const num DESIGN_STATUS_BAR = 0;
 
 extension ResponsiveExtension on num {
   double get _width => SizeUtils.width;
