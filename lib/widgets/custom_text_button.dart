@@ -14,22 +14,16 @@ class CustomTextButton extends StatelessWidget {
     this.isEnabled,
   }) : super(key: key);
 
-  /// The text to display on the button
   final String text;
 
-  /// Callback function when button is pressed
   final VoidCallback? onPressed;
 
-  /// Color of the button text
   final Color? textColor;
 
-  /// Size of the button text
   final double? fontSize;
 
-  /// Weight of the button text
   final FontWeight? fontWeight;
 
-  /// Whether the button is enabled or disabled
   final bool? isEnabled;
 
   @override
