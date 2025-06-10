@@ -7,7 +7,6 @@ class AppRoutes {
   static const String weatherHomeScreen = '/weather_home_screen';
 
   static const String weatherDashboardScreen = '/weather_dashboard_screen';
-  static const String initialRoute = '/initialRoute';
 
   static Map<String, WidgetBuilder> get routes => {
         weatherHomeScreen: (context) => WeatherHomeScreen(),
